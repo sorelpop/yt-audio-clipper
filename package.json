@@ -1,26 +1,37 @@
 {
-    "name": "yt-audio-clipper",
-    "version": "1.0.0",
-    "description": "Clips audio from Youtube videos",
-    "main": "app",
-    "scripts": {
-      "dev": "nodemon app -- -output:'test'",
-      "test": "mocha test/irl-test.js"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-      "@ffmpeg-installer/ffmpeg": "^1.0.15",
-      "command-line-args": "^5.0.2",
-      "command-line-usage": "^5.0.4",
-      "ffmpeg": "0.0.4",
-      "fluent-ffmpeg": "^2.1.2",
-      "randomstring": "^1.1.5",
-      "ytdl-core": "^0.20.2"
-    },
-    "devDependencies": {
-      "mocha": "^5.1.1",
-      "nodemon": "^1.11.0"
-    }
-  }
-  
+  "name": "yt-audio-clipper",
+  "version": "1.0.0",
+  "description": "Clips audio from Youtube videos",
+  "main": "app",
+  "scripts": {
+    "dev": "nodemon app -- -output:'test'",
+    "test": "mocha test/irl-test.js"
+  },
+  "author": "sorelpop",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.15",
+    "command-line-args": "^5.0.2",
+    "command-line-usage": "^5.0.4",
+    "ffmpeg": "0.0.4",
+    "fluent-ffmpeg": "^2.1.2",
+    "randomstring": "^1.1.5",
+    "ytdl-core": "^0.20.2"
+  },
+  "devDependencies": {
+    "mocha": "^5.1.1",
+    "nodemon": "^1.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sorelpop/yt-audio-clipper.git"
+  },
+  "keywords": [
+    "youtube",
+    "audio"
+  ],
+  "bugs": {
+    "url": "https://github.com/sorelpop/yt-audio-clipper/issues"
+  },
+  "homepage": "https://github.com/sorelpop/yt-audio-clipper#readme"
+}
