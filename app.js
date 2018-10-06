@@ -15,20 +15,28 @@ const optionDefinitions = [
 	{ name: "duration", alias: "d", type: String, description: "This argument may be a number (in seconds) or a timestamp string (with format [[hh:]mm:]ss[.xxx]"}
 ]
 
-const options = cmdline(optionDefinitions);
+function isEmptyObject(obj) {
+  for (var key in obj) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+      return false;
+    }
+  }
+  return true;
+}
 
-if (options.help) {
+const options = cmdline(optionDefinitions);
+if (isEmptyObject(options) || options.help) {
 	const usage = cmdlineusage([
     {
       header: 'yt-audio-clipper',
       content: 'A simple tool used to extract, and/or clip sound from YouTube videos.'
     },
-    {
+    { 
       header: 'Options',
       optionList: optionDefinitions
     },
   ])
-  console.log(usage)
+  console.log(usage);
   process.exit(0);
 }
 
